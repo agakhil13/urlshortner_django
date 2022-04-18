@@ -1,4 +1,4 @@
-<head>
+<head><title>Short-Url</title>
     <script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
     <style>
         *,
@@ -101,7 +101,7 @@ section {
         csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val(),
       },
       success: function(data){
-        $('h2').html("http://127.0.0.1:8000/"+data)
+        $('h2').html("https://shorturl13.herokuapp.com/"+data)
       }
     });
   });
