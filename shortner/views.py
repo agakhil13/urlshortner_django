@@ -22,4 +22,3 @@ def create(request):
 def go(request, pk):
     url_details = Url.objects.get(uuid=pk)
     return redirect(url_details.link)
-
