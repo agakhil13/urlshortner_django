@@ -21,4 +21,8 @@ def create(request):
 
 def go(request, pk):
     url_details = Url.objects.get(uuid=pk)
+    url_http = url_details.link[:4]
+    if not url_http == 'http':
+        url = 'https://' + url_details.link
+        return redirect(url)
     return redirect(url_details.link)
