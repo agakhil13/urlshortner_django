@@ -101,7 +101,7 @@ section {
         csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val(),
       },
       success: function(data){
-        $('h2').html("www.surls.ga/"+data)
+        $('h2').html("http://127.0.0.1:8000/"+data)
       }
     });
   });
