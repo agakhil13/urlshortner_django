@@ -6,5 +6,5 @@ class Url(models.Model):
     link = models.CharField(max_length=10000)
     uuid = models.CharField(max_length=10)
 
-    def __srt__(self):
+    def __str__(self):
         return self.link
